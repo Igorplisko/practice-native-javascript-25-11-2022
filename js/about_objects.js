@@ -10,7 +10,7 @@ obj.weight = 85;
 delete obj.gender;
 // console.log(obj);
 
-//!------------------------------
+//?------------------------------
 const obj2 = {
   name: 'Alexander',
   age: 25,
@@ -25,14 +25,14 @@ obj2['smoke'] = true;
 const countryPropertyName = 'country';
 obj2[countryPropertyName] = 'Ukraine';
 
-//!----
+//?----
 const arrayKeys = Object.keys(obj2);
 const arrayValues = Object.values(obj2);
 // console.log(arrayKeys);
 // console.log(arrayValues);
 
-//!------------------------------
-//!Copy mutates the main object
+//?------------------------------
+//?Copy mutates the main object
 
 const userPerson = {
   name: 'Igor',
@@ -47,7 +47,7 @@ userPerson2.isAdult = true
 // console.log(userPerson);
 // console.log(userPerson2);
 
-//!------------------------------
+//?------------------------------
 const ageUser = 25;
 const nameUser = 'Vlad';
 
@@ -68,7 +68,7 @@ const userProfile2 = {
 
 //?shorthand properties are recommended to be placed at the beginning of the object
 
-//!------------------------------
+//?------------------------------
 const objIncluded = {
   name: 'Igor',
   age: 18,
@@ -88,25 +88,25 @@ objIncluded.info.run = true;
 
 // console.log(objIncluded);
 
-//!----------------------------------------------
-//!Methods - properties of an object that contain a function
+//?----------------------------------------------
+//?Methods - properties of an object that contain a function
 
 const myMainCity = {
   city: 'Kharkiv',
   cityGreeting: function () {
-    console.log('Hello everybody!');
+    console.log('Hello everybody?');
   },
 };
 
 // ? delete myMainCity.cityGreeting
 // myMainCity.cityGreeting();
 
-//!----
+//?----
 const greeting = myMainCity.cityGreeting;
 // console.log(greeting)
 // greeting()
 
-//!shorteningzzz of the method
+//?shorteningzzz of the method
 
 const myMainCity2 = {
   city: 'Kharkiv',
@@ -118,7 +118,7 @@ const myMainCity2 = {
 myMainCity2.cityGreeting;
 // myMainCity2.cityGreeting();
 
-//!---------------------------------
+//?---------------------------------
 
 const objIncluded2 = {
   name: 'Igor',
@@ -141,7 +141,7 @@ const conversionToObject = JSON.parse(stringJson);
 
 // console.log(conversionToObject);
 
-//!---------------------------------
+//?---------------------------------
 
 const person = {
   name: 'Igor',
@@ -165,7 +165,7 @@ person4.age = 40;
 // console.log(person3.age);
 // console.log(person4.age);
 
-//!---------------------------------
+//?---------------------------------
 // ? the reference to the nested object is not preserved and the old object is not mutated
 
 const personIncluded = {
@@ -187,4 +187,4 @@ personJson.info.country = 'USA';
 // console.log(personJson);
 // console.log(personSpread);
 
-//!---------------------------------
+//?---------------------------------
