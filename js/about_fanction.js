@@ -9,17 +9,17 @@ function myFn(a, b) {
 // console.dir(myFn)
 myFn(10, 5);
 
-//?--------------------------
+//!--------------------------
 function multiplyNumbers(value, multiplier = 2) {
   return value * multiplier
 }
 
-// multiplyNumbers(10, 5)
+//  multiplyNumbers(10, 5)
+//  multiplyNumbers( 5)
+// const thisNumber = multiplyNumbers(10, 5)
+// console.log(thisNumber);
 
-
-
-
-//?--------------------------
+//!--------------------------
 //?callback function
 
 function anotherFunction() {

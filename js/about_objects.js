@@ -8,9 +8,11 @@ const obj = {
 obj.age = 25;
 obj.weight = 85;
 delete obj.gender;
-// console.log(obj);
 
-//?------------------------------
+// console.log(obj);
+// console.dir(obj)
+
+//!------------------------------
 const obj2 = {
   name: 'Alexander',
   age: 25,
@@ -31,23 +33,23 @@ const arrayValues = Object.values(obj2);
 // console.log(arrayKeys);
 // console.log(arrayValues);
 
-//?------------------------------
+//!------------------------------
 //?Copy mutates the main object
 
 const userPerson = {
   name: 'Igor',
   age: 18,
-}
+};
 
-const userPerson2 =  userPerson 
+const userPerson2 = userPerson;
 
-userPerson2.name = 'Vlad'
-userPerson2.isAdult = true
+userPerson2.name = 'Vlad';
+userPerson2.isAdult = true;
 
 // console.log(userPerson);
 // console.log(userPerson2);
 
-//?------------------------------
+//!------------------------------
 const ageUser = 25;
 const nameUser = 'Vlad';
 
@@ -68,7 +70,7 @@ const userProfile2 = {
 
 //?shorthand properties are recommended to be placed at the beginning of the object
 
-//?------------------------------
+//!------------------------------
 const objIncluded = {
   name: 'Igor',
   age: 18,
