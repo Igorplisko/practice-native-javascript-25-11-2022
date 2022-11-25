@@ -32,6 +32,27 @@ const arrayValues = Object.values(obj2);
 // console.log(arrayValues);
 
 //!------------------------------
+const ageUser = 25;
+const nameUser = 'Vlad';
+
+const userProfile = {
+  ageUser,
+  nameUser,
+  hasEnglishSkill: true,
+};
+
+const userProfile2 = {
+  ageUser: ageUser,
+  nameUser: nameUser,
+  hasEnglishSkill: true,
+};
+
+console.log(userProfile);
+console.log(userProfile2);
+
+//?shorthand properties are recommended to be placed at the beginning of the object
+
+//!------------------------------
 const objIncluded = {
   name: 'Igor',
   age: 18,
@@ -52,7 +73,7 @@ objIncluded.info.run = true;
 // console.log(objIncluded);
 
 //!----------------------------------------------
-//!Методы - свойства обьекта, которые содержат функцию
+//!Methods - properties of an object that contain a function
 
 const myMainCity = {
   city: 'Kharkiv',
@@ -69,7 +90,7 @@ const greeting = myMainCity.cityGreeting;
 // console.log(greeting)
 // greeting()
 
-//!Сокращение
+//!shortening of the method
 
 const myMainCity2 = {
   city: 'Kharkiv',
