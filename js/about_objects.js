@@ -32,6 +32,22 @@ const arrayValues = Object.values(obj2);
 // console.log(arrayValues);
 
 //!------------------------------
+//!Copy mutates the main object
+
+const userPerson = {
+  name: 'Igor',
+  age: 18,
+}
+
+const userPerson2 =  userPerson 
+
+userPerson2.name = 'Vlad'
+userPerson2.isAdult = true
+
+// console.log(userPerson);
+// console.log(userPerson2);
+
+//!------------------------------
 const ageUser = 25;
 const nameUser = 'Vlad';
 
@@ -47,8 +63,8 @@ const userProfile2 = {
   hasEnglishSkill: true,
 };
 
-console.log(userProfile);
-console.log(userProfile2);
+// console.log(userProfile);
+// console.log(userProfile2);
 
 //?shorthand properties are recommended to be placed at the beginning of the object
 
@@ -90,7 +106,7 @@ const greeting = myMainCity.cityGreeting;
 // console.log(greeting)
 // greeting()
 
-//!shortening of the method
+//!shorteningzzz of the method
 
 const myMainCity2 = {
   city: 'Kharkiv',
