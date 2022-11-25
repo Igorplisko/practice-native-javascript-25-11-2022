@@ -79,6 +79,75 @@ const myMainCity2 = {
 };
 
 myMainCity2.cityGreeting;
-myMainCity2.cityGreeting();
+// myMainCity2.cityGreeting();
+
+//!---------------------------------
+
+const objIncluded2 = {
+  name: 'Igor',
+  age: 18,
+  info: {
+    isMale: true,
+    country: 'Ukraine',
+    city: 'Kharkiv',
+    smoke: false,
+  },
+};
+
+const conversionToJson = JSON.stringify(objIncluded2);
+// console.log(conversionToJson);
+
+const stringJson =
+  '{"name":"Igor","age":18,"info":{"isMale":true,"country":"Ukraine","city":"Kharkiv","smoke":false}}';
+
+const conversionToObject = JSON.parse(stringJson);
+
+// console.log(conversionToObject);
+
+//!---------------------------------
+
+const person = {
+  name: 'Igor',
+  age: 18,
+  gender: 'male',
+  dancing: false,
+};
+
+const person2 = Object.assign({}, person);
+const person3 = { ...person };
+const person4 = JSON.parse(JSON.stringify(person));
+
+person2.age = 25;
+person3.age = 30;
+person4.age = 40;
+
+// console.log(person2);
+
+// console.log(person.age);
+// console.log(person2.age);
+// console.log(person3.age);
+// console.log(person4.age);
+
+//!---------------------------------
+// ? the reference to the nested object is not preserved and the old object is not mutated
+
+const personIncluded = {
+  name: 'Igor',
+  age: 18,
+  info: {
+    country: 'Ukraine',
+    city: 'Kharkiv',
+  },
+};
+
+const personJson = JSON.parse(JSON.stringify(personIncluded));
+personJson.info.country = 'USA';
+
+// const personSpread = { ...personIncluded };
+// personSpread.info.country = 'England';
+
+// console.log(personIncluded);
+// console.log(personJson);
+// console.log(personSpread);
 
 //!---------------------------------
