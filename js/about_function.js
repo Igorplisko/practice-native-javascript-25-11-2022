@@ -41,3 +41,18 @@ function printMyName() {
 setTimeout(printMyName, 2000);
 
 //?--------------------------
+const obj = {
+  name: 'Igor',
+  age: 18,
+  gender: 'male',
+  dancing: false,
+};
+
+obj.age = 25;
+obj.weight = 85;
+delete obj.gender;
+
+console.log(obj);
+// console.dir(obj)
+
+//!------------------------------
