@@ -1,0 +1,9 @@
+
+1. JavaScript определяет 7 типов: данных:
+null
+undefined
+boolean
+string
+number
+object
+symbol(добавлен в ES6) 
