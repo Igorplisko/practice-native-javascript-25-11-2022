@@ -1,3 +1,5 @@
+//*declared function
+
 function myFn(a, b) {
   let c;
   a = a + 1;
@@ -7,6 +9,15 @@ function myFn(a, b) {
 
 // console.dir(myFn)
 myFn(10, 5);
+
+//!--------------------------
+//*functional expression
+
+
+
+
+
+
 
 //!--------------------------
 function multiplyNumbers(value, multiplier = 2) {
@@ -19,7 +30,7 @@ function multiplyNumbers(value, multiplier = 2) {
 // console.log(thisNumber);
 
 //!--------------------------
-//?callback function
+//*callback function
 
 function anotherFunction() {
   // console.log('Hello my friend')
@@ -57,7 +68,7 @@ const fistUser = newPost(userProfile)
 // console.table(fistUser);
 
 //!------------------------------
-//?function body shortening
+//*function body shortening
 
  a => {
   //function body
