@@ -46,6 +46,7 @@ const newPost = (post, addedAt = Date()) => ({
   addedAt
 })
 
+
 const userProfile = {
   id: 1,
   author: 'Igor',
@@ -54,5 +55,14 @@ const userProfile = {
 
 const fistUser = newPost(userProfile)
 // console.table(fistUser);
+
+//!------------------------------
+//?function body shortening
+
+ a => {
+  //function body
+}
+
+(a, b) => a + b
 
 //!------------------------------
