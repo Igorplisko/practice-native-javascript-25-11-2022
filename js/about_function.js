@@ -1,4 +1,3 @@
-
 function myFn(a, b) {
   let c;
   a = a + 1;
@@ -11,7 +10,7 @@ myFn(10, 5);
 
 //!--------------------------
 function multiplyNumbers(value, multiplier = 2) {
-  return value * multiplier
+  return value * multiplier;
 }
 
 //  multiplyNumbers(10, 5)
@@ -40,19 +39,20 @@ function printMyName() {
 
 setTimeout(printMyName, 2000);
 
-//?--------------------------
-const obj = {
-  name: 'Igor',
-  age: 18,
-  gender: 'male',
-  dancing: false,
+//!--------------------------
+
+const newPost = (post, addedAt = Date()) => ({
+  ...post,
+  addedAt
+})
+
+const userProfile = {
+  id: 1,
+  author: 'Igor',
+  isAdult: true,
 };
 
-obj.age = 25;
-obj.weight = 85;
-delete obj.gender;
-
-console.log(obj);
-// console.dir(obj)
+const fistUser = newPost(userProfile)
+// console.table(fistUser);
 
 //!------------------------------

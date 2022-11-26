@@ -11,6 +11,7 @@ delete obj.gender;
 
 // console.log(obj);
 // console.dir(obj)
+//console.table(obj);
 
 //!------------------------------
 const obj2 = {
