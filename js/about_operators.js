@@ -129,18 +129,18 @@ if (thisTime < 12) {
 // console.log(thisGreeting);
 
 thisTime < 12
-  ? (thisGreeting = 'Good morning ')
+  ? (thisGreeting = 'Good morning ')           
   : (thisGreeting = 'Good afternoon');
-
+  //*you shouldn't do this because the ternary operator always returns a value
 // console.log(thisGreeting );
 
-//*you can also shorten the ternary operator
+//*it is better to do as in the code with an example of a ternary below
 
 greeting = thisTime < 12 ? 'Good morning ' : 'Good afternoon';
 
 // console.log(thisGreeting );
 
-//==========
+//========== or
 
 let justTime = 15
 let terGreeting = justTime  < 12 ? 'Good morning ' : 'Good afternoon';
