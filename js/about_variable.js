@@ -11,20 +11,44 @@ let isMarried = false;
 
 let ageNull = null;
 
+let exampleArray = [1, 2, 3, 'a', 'b', 'c'];  //object
+// console.log(typeof exampleArray) //object data type
+
+let exampleObject = {
+  name: 'Igor',
+  age: 18,
+  gender: 'male',
+};
+
 //*undefined value
 
 let mySkills;
 // console.log(mySkills)   //undefined
 
+//*BigIbt
+
+let maxIntInJs = Number.MAX_SAFE_INTEGER;
+// console.log(maxIntInJs);
+
+let hugeNumber = 90071992547409919003434;
+// console.log(hugeNumber);
+
+let exampleBigIbt = 90071992547409919003434n + 124n;
+// console.log(exampleBigIbt);
+
+//*Symbol - this is a unique primitive value
+//*allows you to add a unique property to an object with the assurance that it does not overwrite any other property
+
+//!---------------------------------
 //*reset value
 
 let someName = 'James';
 
 someName = undefined; //better not to do that
-console.log(someName);
+// console.log(someName);
 
 someName = null;
-console.log(someName); //should be do like this
+// console.log(someName); //should be do like this
 
 //!---------------------------------
 //*Dynamic typing
@@ -50,3 +74,12 @@ let userLastName = 'Plisko';
 let userAge = 25;
 
 //!---------------------------------
+//* typeof operator
+
+const justName = 'Bob';
+const justAge = 10;
+
+typeof justName;
+
+// console.log(typeof justName);
+// console.log(typeof justAge);
