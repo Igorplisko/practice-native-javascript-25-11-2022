@@ -31,12 +31,14 @@ fancName();
 //*scope inside code block
 {
   let userName = 'Jon';
-  console.log(userName);
+  // console.log(userName);
 
   var someNumber = 10;
-  console.log(someNumber )
+  // console.log(someNumber )
 
 }
 
-console.log(someNumber)
-console.log(userName);
+// console.log(someNumber)
+// console.log(userName);
+
+//!---------------------------------------
