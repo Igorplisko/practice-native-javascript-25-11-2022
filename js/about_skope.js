@@ -12,7 +12,31 @@ function myF() {
 
 myF();
 
-console.log(a); //? true
-console.log(b); //? undefined
+// console.log(a); //? true
+// console.log(b); //? undefined
 
 //!---------------------------------------
+//*functional scope
+
+const fancName = () => {
+  let userName = 'Igor';
+  // console.log(userName);
+};
+
+fancName();
+
+// console.log(userName);
+
+//!---------------------------------------
+//*scope inside code block
+{
+  let userName = 'Jon';
+  console.log(userName);
+
+  var someNumber = 10;
+  console.log(someNumber )
+
+}
+
+console.log(someNumber)
+console.log(userName);
