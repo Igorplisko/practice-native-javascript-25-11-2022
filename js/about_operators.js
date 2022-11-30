@@ -131,9 +131,20 @@ if (thisTime < 12) {
 thisTime < 12
   ? (thisGreeting = 'Good morning ')
   : (thisGreeting = 'Good afternoon');
-  
-  console.log(thisGreeting );
-  
+
+// console.log(thisGreeting );
+
+//*you can also shorten the ternary operator
+
+greeting = thisTime < 12 ? 'Good morning ' : 'Good afternoon';
+
+// console.log(thisGreeting );
+
+//==========
+
+let justTime = 15
+let terGreeting = justTime  < 12 ? 'Good morning ' : 'Good afternoon';
+// console.log(terGreeting);
 
 //!---------------------------------------
 function myFunction() {
