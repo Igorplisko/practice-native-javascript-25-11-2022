@@ -11,7 +11,7 @@ let isMarried = false;
 
 let ageNull = null;
 
-let exampleArray = [1, 2, 3, 'a', 'b', 'c'];  //object
+let exampleArray = [1, 2, 3, 'a', 'b', 'c']; //object
 // console.log(typeof exampleArray) //object data type
 
 let exampleObject = {
@@ -83,3 +83,22 @@ typeof justName;
 
 // console.log(typeof justName);
 // console.log(typeof justAge);
+
+//!---------------------------------
+//*string concatenation and template strings (konkatenatsiya strok i shablonnyye stroki)
+
+//*string concatenation 
+let justGreeting = 'Hey, Vlad!';
+let howAreYou = ' How are you?';
+let sayFullPhrase = justGreeting + ' ' + howAreYou;
+console.log(sayFullPhrase);
+
+// let sayFullPhraseTemplate = `{justGreetin}`
+
+let profileName = 'Lion' 
+let profileGreeting  = 'Hey' + ',  '  + profileName + '! How are you?'
+console.log(profileGreeting );
+
+//*template strings
+let greetingTemplate = `Hey,  ${profileName}! How are you?`
+console.log(greetingTemplate );
