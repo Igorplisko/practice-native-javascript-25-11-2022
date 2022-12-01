@@ -18,7 +18,7 @@ const sayHey = function () {
 
 sayHey();
 
-//!--------------------------
+//!---------------------------------------------------------------------------
 
 function sayGreetings(profileName) {
   console.log(`Hey, ${profileName}! How are you?`);
@@ -27,7 +27,7 @@ function sayGreetings(profileName) {
 // sayGreetings('Igor')
 // sayGreetings('Vlad')
 
-//!------------------------------------------------------------------
+//!---------------------------------------------------------------------------
 function sum(a, b) {
   console.log('start');
   const result = a + b;
@@ -41,7 +41,7 @@ function sum(a, b) {
 // let res = sum(10, 15)
 // console.log(res)
 
-//!------------------------------------------------------------------
+//!---------------------------------------------------------------------------
 //*function as an argument
 
 function justSum(a, b) {
@@ -72,7 +72,7 @@ doSomething(thisSum);
 doSomething(thisMultiply);
 // doSomething(thisMultiply())
 
-//!--------------------------
+//!---------------------------------------------------------------------------
 //*===== Immediately invoked function expression (IIFE) ======
 
 (function shoutHello() {
@@ -96,7 +96,7 @@ let res = (function (a, b) {
 
 // console.log(res)
 
-//!--------------------------
+//!---------------------------------------------------------------------------
 //*declared function
 
 function myFn(a, b) {
@@ -120,7 +120,7 @@ function multiplyNumbers(value, multiplier = 2) {
 // const thisNumber = multiplyNumbers(10, 5)
 // console.log(thisNumber);
 
-//!--------------------------
+//!---------------------------------------------------------------------------
 //*callback function
 
 function anotherFunction() {
@@ -141,7 +141,7 @@ function printMyName() {
 
 setTimeout(printMyName, 2000);
 
-//!--------------------------
+//!---------------------------------------------------------------------------
 
 const newPost = (post, addedAt = Date()) => ({
   ...post,
@@ -157,7 +157,7 @@ const userProfile = {
 const fistUser = newPost(userProfile);
 // console.table(fistUser);
 
-//!------------------------------
+//!---------------------------------------------------------------------------
 //*Function body shortening
 
 (a) => {
@@ -166,7 +166,7 @@ const fistUser = newPost(userProfile);
 
 (a, b) => a + b;
 
-//!------------------------------
+//!---------------------------------------------------------------------------
 //* ================== Arrow function ==============
 
 function justSayGreetings(profileName) {
