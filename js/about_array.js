@@ -12,7 +12,8 @@ const cars = ['Volkswagen', 'Volvo', 'BMW'];
 // console.log(cars.length)
 
 const arrayExample = [1, 'a', true, ['Volkswagen', 'Volvo', 'BMW']];
-console.log(arrayExample)
+console.log(arrayExample);
+
 
 
 

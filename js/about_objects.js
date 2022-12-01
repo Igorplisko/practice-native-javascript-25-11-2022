@@ -183,7 +183,7 @@ const personIncluded = {
 const personJson = JSON.parse(JSON.stringify(personIncluded));
 personJson.info.country = 'USA';
 
-// const personSpread = { ...personIncluded };
+const personSpread = { ...personIncluded };
 // personSpread.info.country = 'England';
 
 // console.log(personIncluded);
