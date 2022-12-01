@@ -91,7 +91,7 @@ doSomething(thisMultiply);
 
 //=========
 let res = (function (a, b) {
-  return a * b
+  return a * b;
 })(10, 5);
 
 // console.log(res)
@@ -173,6 +173,26 @@ function justSayGreetings(profileName) {
   console.log(`Hey, ${profileName}! How are you?`);
 }
 
+const arrowSayGreetings = (profileName) => {
+  console.log(`Hey, ${profileName}! How are you?`);
+  //*Arrow function does not have its own "this context"
+  //*Arrow function refers to the context of which is in the scope where it is declared
+};
+// arrowSayGreetings('Ray');
 
-const arrowSayGreetings
+const arrowSayGreetings2 = (profileName) =>
+  console.log(`Hey, ${profileName}! How are you?`);
+// arrowSayGreetings2('Lion');
 
+//=====================
+
+const otherSum = (a, b) => {
+  return a + b;
+};
+
+const anotherSum = (a, b) => a + b;
+
+const otherResult = otherSum(10, 10);
+const anotherResult = anotherSum(15, 15);
+// console.log(otherResult);
+// console.log(anotherResult);
