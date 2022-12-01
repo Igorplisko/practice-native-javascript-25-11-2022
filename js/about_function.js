@@ -27,7 +27,7 @@ function sayGreetings(profileName) {
 // sayGreetings('Igor')
 // sayGreetings('Vlad')
 
-//!--------------------------
+//!------------------------------------------------------------------
 function sum(a, b) {
   console.log('start');
   const result = a + b;
@@ -41,7 +41,7 @@ function sum(a, b) {
 // let res = sum(10, 15)
 // console.log(res)
 
-//!----------------------------------
+//!------------------------------------------------------------------
 //*function as an argument
 
 function justSum(a, b) {
