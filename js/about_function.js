@@ -1,3 +1,102 @@
+//! ================= DRY - Don't repeat yourself ==================
+
+//*declared function
+sayHi();
+
+function sayHi() {
+  //  console.log('Hello, my dear user')
+}
+
+//------------
+//*functional expression
+//? function expression we can't call anywhere
+
+//  sayHey()
+const sayHey = function () {
+  // console.log('Hey, my dear user')
+};
+
+sayHey();
+
+//!--------------------------
+
+function sayGreetings(profileName) {
+  console.log(`Hey, ${profileName}! How are you?`);
+}
+
+// sayGreetings('Igor')
+// sayGreetings('Vlad')
+
+//!--------------------------
+function sum(a, b) {
+  console.log('start');
+  const result = a + b;
+  return result;
+  console.log('finish');
+
+  //*if you comment out "operator return" the function will return undefined
+  //*after "operator return" in the function nothing happens
+}
+
+// let res = sum(10, 15)
+// console.log(res)
+
+//!----------------------------------
+//*function as an argument
+
+function justSum(a, b) {
+  return a + b;
+}
+
+// console.log(justSum (10, 15))
+// console.log(justSum (10, 15), justSum (10, 15))
+
+const result = justSum(justSum(3, 12), justSum(10, 5));
+// console.log(result)
+
+//======= Callback function and function as an argument--------
+
+function thisSum(a, b) {
+  return a + b;
+}
+function thisMultiply(a, b) {
+  return a * b;
+}
+
+function doSomething(func) {
+  let result = func(5, 25);
+  //  console.log(result)
+}
+
+doSomething(thisSum);
+doSomething(thisMultiply);
+// doSomething(thisMultiply())
+
+//!--------------------------
+//*===== Immediately invoked function expression (IIFE) ======
+
+(function shoutHello() {
+  // console.log('Hello dear user');
+})();
+
+//====anonymous immediately invoked function expression
+(function () {
+  // console.log('Hello dear user!!!');
+})();
+
+//=========
+(function (a, b) {
+  // console.log(a / b);
+})(10, 5);
+
+//=========
+let res = (function (a, b) {
+  return a * b
+})(10, 5);
+
+// console.log(res)
+
+//!--------------------------
 //*declared function
 
 function myFn(a, b) {
@@ -10,16 +109,8 @@ function myFn(a, b) {
 // console.dir(myFn)
 myFn(10, 5);
 
-//!--------------------------
-//*functional expression
+//=======
 
-
-
-
-
-
-
-//!--------------------------
 function multiplyNumbers(value, multiplier = 2) {
   return value * multiplier;
 }
@@ -54,9 +145,8 @@ setTimeout(printMyName, 2000);
 
 const newPost = (post, addedAt = Date()) => ({
   ...post,
-  addedAt
-})
-
+  addedAt,
+});
 
 const userProfile = {
   id: 1,
@@ -64,16 +154,25 @@ const userProfile = {
   isAdult: true,
 };
 
-const fistUser = newPost(userProfile)
+const fistUser = newPost(userProfile);
 // console.table(fistUser);
 
 //!------------------------------
-//*function body shortening
+//*Function body shortening
 
- a => {
+(a) => {
   //function body
-}
+};
 
-(a, b) => a + b
+(a, b) => a + b;
 
 //!------------------------------
+//* ================== Arrow function ==============
+
+function justSayGreetings(profileName) {
+  console.log(`Hey, ${profileName}! How are you?`);
+}
+
+
+const arrowSayGreetings
+
