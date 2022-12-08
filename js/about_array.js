@@ -61,7 +61,6 @@ for (let i = 0; i < animals.length; i++) {
 
 for (let oneAnimal of animals) {
   // console.log(oneAnimal)
-  
 }
 
 //====================forEach() ================================================
@@ -136,3 +135,5 @@ const thisAnimals = animals
     };
   });
 console.log(thisAnimals);
+
+//==========================================================================
