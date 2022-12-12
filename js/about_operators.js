@@ -56,18 +56,6 @@ if (condition1) {
   // console.log(false);
 }
 //-------
-const time = new Date().getHours();
-let greeting;
-if (time < 10) {
-  greeting = 'Good morning';
-} else if (time < 20) {
-  greeting = 'Good day';
-} else {
-  greeting = 'Good evening';
-}
-document.getElementById('demo1').innerHTML = greeting;
-
-//-------
 
 let conditionAge = 17; //10, 18, 25 , 37, 50
 
@@ -129,9 +117,9 @@ if (thisTime < 12) {
 // console.log(thisGreeting);
 
 thisTime < 12
-  ? (thisGreeting = 'Good morning ')           
+  ? (thisGreeting = 'Good morning ')
   : (thisGreeting = 'Good afternoon');
-  //*you shouldn't do this because the ternary operator always returns a value
+//*you shouldn't do this because the ternary operator always returns a value
 // console.log(thisGreeting );
 
 //*it is better to do as in the code with an example of a ternary below
@@ -142,18 +130,6 @@ greeting = thisTime < 12 ? 'Good morning ' : 'Good afternoon';
 
 //========== or
 
-let justTime = 15
-let terGreeting = justTime  < 12 ? 'Good morning ' : 'Good afternoon';
+let justTime = 15;
+let terGreeting = justTime < 12 ? 'Good morning ' : 'Good afternoon';
 // console.log(terGreeting);
-
-//!---------------------------------------
-function myFunction() {
-  let voteable;
-  let age = Number(document.getElementById('age').value);
-  if (isNaN(age)) {
-    voteable = 'Input is not a number';
-  } else {
-    voteable = age < 18 ? 'Too young' : 'Old enough';
-  }
-  document.getElementById('demo').innerHTML = voteable + ' to vote';
-}
