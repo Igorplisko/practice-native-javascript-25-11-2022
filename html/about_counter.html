@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>JS Bin</title>
+  </head>
+  <body style="background-color: rgb(139, 143, 162)">
+    <p style="color: rgb(69, 184, 207); font-size: 40px">Igor</p>
+
+    <!-- _____________________________________________________ -->
+
+    <div>
+      <h1>0</h1>
+      <button id="plus">+</button>
+      <button id="minus">-</button>
+    </div>
+
+    <!-- _____________________________________________________ -->
+
+    <script>
+      const clickPlus = document.querySelector('#plus');
+      const clickMinus = document.querySelector('#minus');
+      const h1 = document.querySelector('h1');
+      let amount = 0;
+
+      function render() {
+        h1.innerText = amount;
+        if (amount > 0) {
+          clickMinus.removeAttribute('disabled');
+        } else {
+          clickMinus.setAttribute('disabled', '');
+        }
+      }
+
+      clickPlus.addEventListener('click', () => {
+        amount++;
+        render();
+      });
+
+      clickMinus.addEventListener('click', () => {
+        amount--;
+        render();
+      });
+      S;
+    </script>
+
+    <div style="color: rgb(88, 208, 28)" id="root"></div>
+  </body>
+</html>
