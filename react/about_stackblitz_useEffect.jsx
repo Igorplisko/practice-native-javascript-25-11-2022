@@ -6,9 +6,9 @@ import './style.css';
 export default function App() {
   const [visibleList, setVisibleList] = React.useState(true);
 
-const toggleVisibleList = () => {
-  setVisibleList(justVisible => !justVisible)
-}
+  const toggleVisibleList = () => {
+    setVisibleList((justVisible) => !justVisible);
+  };
 
   return (
     <div className="App">
@@ -17,7 +17,6 @@ const toggleVisibleList = () => {
     </div>
   );
 }
-
 
 //___________________________________________________
 
@@ -73,11 +72,7 @@ const List = () => {
     </>
   );
 };
-export default List;
-
-
-
-
+// export default List;
 
 //-------------------------------------------------
 
