@@ -1,4 +1,4 @@
-// ================================  Выбор DOM элементов =====
+// =============  Выбор DOM элементов =============  
 
 // Выбор одного элемента DOM по селектору
 // Будет выбрать первый найденный элемент. Поиск осуществляется с начала кода страницы, сверху вниз.
@@ -54,14 +54,14 @@ document.querySelector('h1'); //tag
 document.querySelector('.header'); //class
 document.querySelector('#footer'); //id
 
+//? Также есть следующие методы
+// ? document.getElementsByClassName('heading-v2'); // выбор Коллекции элементов по CSS классу
+//? document.getElementsByTagName('p'); // выбор Коллекции элементов по Тегу
+//? document.getElementById('id'); // выбор одного элемента по ID
+
 //?Более сложный селектор
 // const matches = document.querySelectorAll("iframe[data-src]");
 // const matches2 = container.querySelectorAll("div.highlighted > p");
 // const el = document.querySelector("div.user-panel.main input[name=login]");
-
-//? Также есть следующие методы
-// ? document.getElementsByClassName(); // выбор Коллекции элементов по CSS классу
-//? document.getElementsByTagName(); // выбор Коллекции элементов по Тегу
-//? document.getElementById(); // выбор одного элемента по ID
 
 
