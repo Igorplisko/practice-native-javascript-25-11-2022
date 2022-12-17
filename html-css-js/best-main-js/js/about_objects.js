@@ -186,7 +186,7 @@ personJson.info.country = 'USA';
 const personSpread = { ...personIncluded };
 // personSpread.info.country = 'England';
 
-// console.log(personIncluded);
+console.log(personIncluded);
 // console.log(personJson);
 // console.log(personSpread);
 
