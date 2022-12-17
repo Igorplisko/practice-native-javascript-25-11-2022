@@ -6,6 +6,7 @@ h2 {
 body {
   font-family: sans-serif;
   line-height: 1.5;
+ background-color: rgb(12, 17, 100);
 }
 
 .none {
@@ -15,18 +16,28 @@ body {
 .red {
   border: 1px solid red;
 }
+
 .green {
-  border: 1px solid green;
-}
-.blue {
-  border: 1px solid blue;
+   border: 2px solid green;
+} 
+
+.purple{
+  border: 3px solid rgb(144, 16, 133);
 }
 
-.red-text {
-  color: red;
+.black{
+  border: 2px solid black;
+}
+
+.yellow-text {
+  color: yellow;
 }
 .green-text {
-  color: green;
+  color: rgb(22, 221, 22);
+}
+
+.sky-blue-text {
+  color: rgb(8, 104, 230);
 }
 
 /* Шапка */
