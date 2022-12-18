@@ -50,21 +50,23 @@
         officiis?
       </p>
     </div>
-   
-   
-    <!-- ! file: js/3-dom-attr.js and  js/5-event.js   -->
+
+    <!-- ! files: js/3-dom-attr.js and  js/4-dom-events.js  -->
     <!-- Работа с атрибутами. Прослушка событий. Изображение -->
-    <div class="dom-example" style="display: flex; justify-content: space-between;">
+    <!-- style="display: flex; justify-content: space-between" -->
+    <div class="dom-example none">
       <div class="example-block">
         <img id="logo-js" src="./img/js.png" alt="Логотип" /><br />
         <input id="button-js" type="submit" value="Кнопка" />
+        <input id="button-2" type="submit" value="Нажми сюда" />
       </div>
       <div class="example-block">
         <img id="logo-php" src="./img/js.png" alt="Логотип" /><br />
-        <input id="button-2" type="submit" value="Кнопка" />
+        <input id="button-3" type="submit" value="Кнопка" />
       </div>
     </div>
 
+    <!-- ! files: src="js/5-event.js"   -->
     <!-- Прослушка событий 2. Форма -->
     <div class="dom-example none">
       <form action="">
@@ -73,14 +75,16 @@
       </form>
     </div>
 
+
+      <!-- ! files: src="js/6-obj_event.js"     -->
     <!-- Прослушка событий 3. event -->
-    <div class="dom-example none">
-      <h2>Объект event</h2>
-      <h3>Список задач</h3>
+    <div class="dom-example ">
+      <h2 style="font-size: 28px; color: yellowgreen;">Объект event =)</h2>
+      <h3  style="font-size: 25px;">Список задач:</h3>
       <ul id="list">
-        <li>Посмотреть вебинар</li>
-        <li>Написать конспект</li>
-        <li>Повторить код с урока</li>
+        <li style="font-size: 21px;"><b>Посмотреть вебинар</b></li>
+        <li style="font-size: 21px;"><b>Написать конспект</b></li>
+        <li style="font-size: 21px;"><b>Повторить код c урока</b></li>
       </ul>
     </div>
 
@@ -133,6 +137,7 @@
       </div>
     </div>
 
-    <script src="js/5-event.js"></script>
+    <script src="js/6-obj_event.js
+    "></script>
   </body>
 </html>
