@@ -88,26 +88,67 @@ function checkRooms() {
 // checkRooms()
 
 //==================================================
-function justCheckRooms() {
+function justCheckRooms(success, failed) {
   setTimeout(function () {
     console.log('Checking hotel rooms...');
-    let thisAvailableRooms = true;
+    let thisAvailableRooms = true; //set false
+
     if (thisAvailableRooms) {
+      let message = "you're lucky there are still rooms available.";
+      success(message);
     } else {
+      let message = 'there are no available rooms vacation is canceled';
+      failed(message);
     }
   }, 1000);
 }
 
 function cancelVocation(message) {
   console.log('-----cancelVocation------');
-  console.log('Answer in previous step', message);
+  console.log('Answer in previous step -', message);
   console.log('Vacation canceled 😭');
 }
 
 function submitVocation(message) {
   console.log('-----submitVocation ------');
-  console.log('Answer in previous step', message);
+  console.log('Answer in previous step -', message);
   console.log('We are going on vacation✈️🏝🏖');
 }
 
-//5 : 18
+function checkTickets(message, success, failed ) {
+  setTimeout(() => {
+    console.log('function check tickets');
+    console.log('answer in previous step', message);
+    console.log('Checking hotel rooms...');
+    //----code that sends a request to the airline----
+    let thisAvailableRooms = false;
+    if (thisAvailableRooms) {
+      let message = "you're lucky there are still rooms available.";
+      success(message);
+    } else {
+      let message = 'there are no available rooms vacation is canceled';
+      failed(message);
+    }
+  }, 500);
+}
+// callback Hell разростается
+// код уезжает вправо
+
+justCheckRooms(
+  function (messageFromCheckRooms) {
+		checkTickets(
+			messageFromCheckRooms,
+			function () {
+				submitVocation(messageFromCheckRooms);
+			},
+			function () {
+				cancelVocation(messageFromCheckRooms);
+			}
+		);
+	},
+	function (messageFromCheckRooms) {
+		cancelVacation(messageFromCheckRooms);
+	}
+);
+
+
