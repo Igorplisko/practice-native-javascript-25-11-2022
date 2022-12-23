@@ -5,7 +5,7 @@ const promise = new Promise(function (resolve, reject) {
 		// Представим что здесь был запрос на сервер.
 		// Сервер вернул нам результат в переменную res
 		// и дванные в dataFromServer
-		const res = 'success';
+		const res = 'success';   //! change this string
 		const dataFromServer = 'dataFromServer = DONE!';
 
 		// !ВАЖНО! Мы сами определяем успешно
