@@ -22,3 +22,4 @@ inputText.addEventListener(
 // const inputHandler2 = () => textBlock.innerText = inputText.value
 // inputText.addEventListener('input' ,inputHandler2)
 // ============= =============
+// ============= =============
